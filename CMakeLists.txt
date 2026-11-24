@@ -9,3 +9,8 @@ find_package(Threads)
 
 add_executable(hello_CSCN main.cpp)
 target_link_libraries(hello_CSCN Threads::Threads)
+
+if(COVERAGE)
+    target_compile_options(hello_CSCN PRIVATE --coverage -O0)
+    target_link_options(hello_CSCN PRIVATE --coverage)
+endif()
