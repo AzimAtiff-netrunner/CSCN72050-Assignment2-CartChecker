@@ -6,7 +6,7 @@ sleep 3
 FAIL=0
 check () {
  code=$(curl -s -o /dev/null -w "%{http_code}" "http://localhost:23500$1")
- if [ "$code" = "$2" ]; then 
+ if [[ "$code" = "$2" ]]; then 
     echo "PASS $1 -> $code"
  else
     echo "FAIL $1 expected $2 got $code"
