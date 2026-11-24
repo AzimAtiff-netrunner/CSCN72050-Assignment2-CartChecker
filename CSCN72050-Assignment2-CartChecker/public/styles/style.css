@@ -1,0 +1,89 @@
+/* IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+/* TOP BAR */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    font-size: 20px;
+}
+
+/* TITLE */
+.title {
+    text-align: center;
+    font-size: 80px;
+    margin-top: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 30px;
+}
+
+/* GRID (2x2 CENTERED) */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 40px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* PRODUCT CARD */
+.card {
+    text-align: center;
+}
+
+/* BUTTON STYLE */
+a.button, button {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-top: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    border: 2px solid black;
+
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+a.button:hover, button:hover {
+    opacity: 0.8;
+}
+
+/* CENTER */
+.center {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* FORM */
+form {
+    text-align: center;
+    margin-top: 40px;
+}
+
+input {
+    padding: 12px;
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+/* KEEP CART PAGE SAFE */
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
