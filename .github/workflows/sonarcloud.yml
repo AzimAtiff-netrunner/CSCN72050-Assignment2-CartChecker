@@ -25,7 +25,7 @@ jobs:
           restore-keys: ${{ runner.os }}-sonar
 
       - name: Install dependencies
-        run: sudo apt-get update && sudo apt-get install -y cmake libasio-dev gcovr curl
+        run: sudo apt-get update && sudo apt-get install -y cmake libasio-dev curl pipx install gcovr
 
       - name: Build with coverage
         run: |
